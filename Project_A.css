@@ -1,0 +1,252 @@
+/* Universal */
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family:garamond ;
+	margin:0;
+	padding:0;
+	height: 1400px;
+	background-image:url("ProjectPics/Japan.jpg");
+	background-size: 1280px 1400px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+/* Header */
+header{
+	margin:0px;
+	margin-bottom: -22px;
+	padding:0px;
+	font-size: 30px;
+}
+
+nav ul{
+
+	margin-top: 0px;
+	padding-bottom: 5px ;
+	margin-bottom: -25px;
+}
+
+nav ul li{
+display:inline-flex;
+margin-right: 10px;
+flex-direction: row;
+
+}
+
+nav ul li a{
+	color:whitesmoke;
+	text-decoration: none;
+
+}
+nav ul li a:hover{
+	text-decoration: underline;
+}
+
+nav ul li:first-child{
+	margin-left:-15px;
+}
+
+header h1{
+	margin-top: -30px;
+	text-align: center;
+	padding:20px;
+	pointer-events: none;
+}
+/* Search Bar */
+section.search{
+display:inline-flex;
+margin-left: 38%;
+}
+
+section.search input{
+outline:none;
+width: 250px;
+height: 20px;
+}
+
+
+section.search input:hover{
+border-color: aqua;
+}
+
+section.search button{
+
+height:26px;
+text-align: center;
+}
+
+section.search button:hover{
+border-color: aqua;
+
+}
+
+/*HomeHeader */
+
+header.Home h1{
+	color:white;
+}
+
+/* HomeSection */
+
+section.Home_schedule{
+margin-left: 100px;
+margin-top: 50px;
+}
+
+
+section.Home_schedule figure {
+	display: inline-flex;
+	flex-flow: column;	
+	width:200px;
+	margin:auto
+	
+}
+section.Home_schedule figure img{
+outline-style:solid;
+border-radius: 20px;
+outline-color: black;
+	
+}	
+
+section.Home_schedule figure img, figcaption{
+	width:200px;
+	margin: 10px 19% 0px 19%;
+
+
+}
+
+
+
+section.Home_schedule figcaption{
+	pointer-events: none;
+	background-color: blanchedalmond;
+	text-align: center;
+	margin-top: 2px;
+	border-radius:30px;
+}
+
+/* scroll */
+#scrollDown{
+	color: black;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	padding: 1rem;
+	background-color: #1D2671;
+	border: #517FA4;
+	border-radius: 5rem;
+}
+
+#scrollUp{
+	color: black;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 235%;
+	padding: 1rem;
+	background-color: #1D2671;
+	border: #517FA4;
+	border-radius: 5rem;
+}
+
+
+
+/* Module */
+/* School Works */
+/* Input section */
+div.schoolWorks{
+	max-width: 800px;
+	width: 100%;
+	padding: 2rem 1rem;
+	margin: 0 auto;
+}
+
+div.schoolWorks Input, button{
+	outline: none;
+	appearance: none;
+	border: none;
+	background: none;
+}
+
+section.schoolWorksListInput{
+	display: flex;
+	flex-direction: column;
+}
+
+section #schoolWorksInput {
+background-image:linear-gradient(to right, #C33764, #1D2671);
+padding: 1.2rem;
+border-radius: 1rem;
+width: 100%;
+margin-right: 1px;
+font-size: 1.2rem;
+color: gray;
+max-width: 600px;
+}
+
+section #schoolWorksSubmit{
+background-image:linear-gradient(#662D8C, #ED1E79);
+font-size: 1.5rem;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 800;
+cursor: pointer;
+transition: .5s;
+}
+
+section #schoolWorksSubmit:hover{
+opacity: 0.8;
+}
+
+section #schoolWorksSubmit:active{
+opacity: 0.6;	
+}
+
+/* Lists Section */
+div.schoolWorksContentList , .savedList{
+padding: 0.5rem 1rem;
+max-width: 700px;
+width: 100%;
+display: flex;
+background-color: black;
+margin-top: 1rem;
+margin-bottom: 1rem;
+border-radius: 1rem;
+justify-content: space-between;
+}
+
+div.List .schoolWorksItems:read-only{
+font-size: 1.2rem;
+background-image:linear-gradient(to right, #243949 , #517FA4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+section.schoolWorksList .schoolWorksItems:not(:read-only){
+background-image:linear-gradient(to right, #92FFC0, #002661);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 1.2rem;
+}
+
+div.schoolWorkListActions , .savedList{
+background-color: gray;
+display: flex;
+background-image:linear-gradient(to right,#FFDB01,#0E197D);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 1.5 rem;
+font-size: 1rem;
+font-size: 15px;
+}
+
+div.schoolWorkListActions button{
+text-transform: uppercase;
+}
+
+div.schoolWorkListActions button:hover{
+	cursor: pointer;
+}

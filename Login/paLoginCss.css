@@ -1,0 +1,66 @@
+body{
+margin:0px;
+padding: 0px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image: url('../ProjectPics/login.webp');
+}
+
+header{
+position: absolute;
+width:300px;
+height:340px;
+left:50%;
+top:50%;
+transform: translate(-50%, -50%);
+}
+
+header h1{
+pointer-events: none;
+color:#FBCA03;
+text-transform: uppercase;
+text-align: center;
+}
+
+div{
+margin-left:20px;
+margin-top:50px
+}
+
+
+div.Login input{
+outline: none;
+width:90%;
+font-size: 18px;
+outline: none;
+border-color:#FBCA03 ;;
+transition: .5s;
+background-color: #6A0C0B;
+}
+
+div.Login label{
+position: absolute;
+margin-top: 3px;
+left:22px;
+font-size:18px;
+pointer-events: none;
+transition: .5s;
+color:#B97D10;
+}
+
+
+div.Login input:focus~label,
+div.Login input:valid~label{
+margin-top:-20px;
+color: silver;
+}
+
+div.submit{
+margin-top:15px;
+}
+
+
+input#Submit{
+cursor: pointer;
+border: none;
+background-color: #67C7EB;
+}
